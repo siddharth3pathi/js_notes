@@ -1,0 +1,49 @@
+The difference between primitive and non-primitive data types in JavaScript is that primitive data types store their values directly, while non-primitive data types store references to values.
+
+**Primitive data types:**
+
+* Boolean
+* Number
+* String
+* Null
+* Undefined
+
+**Non-primitive data types:**
+
+* Object
+* Function
+* Array
+
+Primitive data types are immutable, meaning that their values cannot be changed once they are assigned. Non-primitive data types are mutable, meaning that their values can be changed.
+
+When a primitive value is assigned to a variable, a copy of the value is stored in the variable. When a non-primitive value is assigned to a variable, a reference to the value is stored in the variable.
+
+This means that if you change the value of a non-primitive variable, the change will be reflected in all of the variables that reference the same value.
+
+Here is an example:
+
+```javascript
+// Primitive data type
+let a = 10;
+let b = a;
+
+a = 20;
+
+console.log(b); // 10
+
+// Non-primitive data type
+let c = { name: 'John Doe' };
+let d = c;
+
+c.name = 'Jane Doe';
+
+console.log(d.name); // Jane Doe
+```
+
+In the first example, the variable `b` is assigned a copy of the value of the variable `a`. When the value of the variable `a` is changed, the value of the variable `b` is not affected.
+
+In the second example, the variable `d` is assigned a reference to the object that is stored in the variable `c`. When the value of the object that is stored in the variable `c` is changed, the change is reflected in the variable `d`.
+
+It is important to be aware of the difference between primitive and non-primitive data types in JavaScript. This can help you to avoid unexpected results in your code.
+
+In general, it is recommended to use primitive data types whenever possible. This is because primitive data types are simpler and easier to understand.
