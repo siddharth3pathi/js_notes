@@ -22,23 +22,18 @@ This means that if you change the value of a non-primitive variable, the change 
 
 Here is an example:
 
-```javascript
 // Primitive data type
 let a = 10;
 let b = a;
-
 a = 20;
-
 console.log(b); // 10
 
 // Non-primitive data type
 let c = { name: 'John Doe' };
 let d = c;
-
 c.name = 'Jane Doe';
-
 console.log(d.name); // Jane Doe
-```
+
 
 In the first example, the variable `b` is assigned a copy of the value of the variable `a`. When the value of the variable `a` is changed, the value of the variable `b` is not affected.
 
